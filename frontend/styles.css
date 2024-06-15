@@ -1,0 +1,75 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000000;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    /* 设置容器宽度，根据需要调整 */
+    max-width: 600px;
+    /* 设置最大宽度，根据需要调整 */
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+#puzzle-container {
+    position: relative;
+    width: 600px;
+    height: 800px;
+    border: 10px solid #de0a0a;
+    margin-bottom: 20px;
+}
+
+.puzzle-piece {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ffffff;
+    background-size: 600px 800px;
+}
+
+#quotes-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 600px;
+    height: 800px;
+
+    pointer-events: none;
+    /* Ensure quotes don't interfere with drag and drop */
+}
+
+.quote {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 30px;
+    /* Adjust font size to fit within the pieces */
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#check-button {
+    position: absolute;
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 131%;
+    margin-left: 41.5%;
+}
